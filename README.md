@@ -48,7 +48,7 @@ Display message: You can do better than that.
 Display message: Try again :)
 
 
-
+----------------------------------------------
 
 While writing and testing the program code, I made sure to approach things very carefully and systematically to minimize the chance of errors. 
 I reviewed the code line by line, making sure I understood the functionality, logic and purpose of each part. While doing that I also made sure to go over the syntax. 
