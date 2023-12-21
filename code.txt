@@ -1,0 +1,106 @@
+import java.time.LocalTime; // from start variable; to track seconds
+import java.util.Random; // from new random instance; randomizes array
+import java.util.Scanner; // from new scanner instance to help user interact
+import java.util.concurrent.TimeUnit; // from time delay function; pauses output of countdown 
+ 
+public class Main { // Randomized WPM Generator Typing Test
+  
+  static String[] words = {"once", "time", "there", "was", "an", "honest", "speed", "typing", 
+                          "fast", "words", "per", "minute", "coding", "this", "was", "fun", 
+                          "seconds", "minutes", "professional", "hobby", "times", "message", 
+                          "system", "possible", "original", "errors", "correct", "generate", 
+                          "random", "entire", "user", "convert", "calculate", "company", 
+                          "mastery", "learning", "linear","algebra", "computer", "science", 
+                          "excited", "about", "enjoy", "the", "process", "machine", 
+                          "artificial", "theory", "sorting", "application", "programming", 
+                          "language"}; 
+/* 52 elements (Index = 51); Static means we don't have to create an object (an instance) to 
+access this array */
+  
+  public static void main(String[] args) throws InterruptedException { 
+    /* "throws InterruptedException" is for "TimeUnit.SECONDS.sleep */ 
+    
+    System.out.println ("Ready?"); // Actual statement shown in output console 
+    TimeUnit.SECONDS.sleep(2); // The amount of time it takes for it to appear (2 seconds)
+    
+    System.out.println("3");
+    TimeUnit.SECONDS.sleep (1); // Can't be a double data type 
+  
+    System.out.println("2");
+    TimeUnit.SECONDS.sleep(1); // Must be a whole number
+  
+    System.out.println("1");
+    TimeUnit.SECONDS.sleep(1); // 1 second time delay
+  
+    System.out.println("Go!");
+    TimeUnit.SECONDS.sleep(1); // 1 second time delay
+   
+    Random rand = new Random(); /* creates a random number generator which creates the 
+    import statement above (java.util.Random) */
+    
+    for(int i = 0; i <10; i++) { // 10 = number of elements to be shown from array
+      
+      System.out.print(words[rand.nextInt(51)] + " "); 
+      /* "51" = the index of the array; randomizes 52 elements; "ln" is removed from 
+      the print statement to keep output on the same line & not have every word 
+      from the array stacked on top of each other; The "+ " "" at the end indents 
+      them (add spaces) */
+    }
+ 
+    System.out.println(); /* for the user to start typing; before this you can't type 
+    anything */
+ 
+    /* Now that everything is working, we must start to calculate the words per minute; 
+    We take the exact seconds of the day when the words first print on the console and 
+    take the exact seconds of the day when we hit "enter" (finished typing); Subtracting 
+    them, then calculating the WPM with that difference of time. */
+ 
+    /* Plug "LocalTime.now().toNanoOfDay();" which gets the exact nanoseconds of the day 
+    at the time block of code where the user can start to type, which is above the 
+    scanner function. Input it into a "double" data type variable named "start" & also 
+    input it where the user is done typing & hits enter (also a double data type labeled 
+    "end". "Double" data types are great for accuracy, calculations & decimals. */
+ 
+    double start = LocalTime.now().toNanoOfDay(); /* provides nanoseconds after words are 
+    printed */
+ 
+    Scanner scan = new Scanner(System.in); /* "System.in" means into the console (output); 
+    This generates "java.util.Scanner" import statement above */
+    
+    String typedWords = scan.nextLine(); /* String data type with the name of the variable; 
+    when the user hits enter, it scans the entire line that was typed by the user. This 
+    then stores entire line as a string into the "typedWords" variable. */
+ 
+    // below is after the user hits enter on the last word typed
+ 
+    double end = LocalTime.now().toNanoOfDay(); // provides nanoseconds after user hits enter
+ 
+    double elapsedTime = end - start; /* new variable that calculates difference in seconds 
+    from start to finish; But if you test this with system.out.pringln(elapsedTime); 
+    statement, you'll see that there are too many decimal points associated with the 
+    time it takes to complete */ 
+ 
+    double seconds = elapsedTime / 1000000000.0; // converts it to a more realistic time 
+ 
+    /* We need to first get the number of characters that the user entered so we use the 
+    code below. "length" is used to get the size (arrays use "length" while array lists 
+    uses "size" */
+ 
+    int numChars = typedWords.length(); 
+ 
+    int wpm = (int) ((((double) numChars / 5) / seconds) * 60); /* times 60 to get words per 
+    minute and not seconds */
+ 
+    // Now finally we can print out a message
+ 
+    System.out.println("Your wpm is only " + wpm + "!"); 
+    
+    System.out.println("You can do better than that.");
+    
+    System.out.println("Try again :)");
+    
+    // Must start typing as soon as line of words are printed! That is when the time starts
+ 
+  }
+ 
+}
