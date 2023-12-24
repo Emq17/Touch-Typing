@@ -13,24 +13,24 @@
 
 Import necessary libraries
 
-     Create an Array of Words = *Input random words to be displayed for the user here*
+Create an Array of Words = *Input random words to be displayed for the user here*
 
 Main Program
 
-     Display “Ready?” on the screen
-     Wait for 2 seconds 
+Display “Ready?” on the screen
+Wait for 2 seconds 
 
-     Display “3” 
-     Wait for 1 second
+Display “3” 
+Wait for 1 second
 
-     Display “2”
-     Wait for 1 second
+Display “2”
+Wait for 1 second
 
-     Display “1”
-     Wait for 1 second
+Display “1”
+Wait for 1 second
 
-     Print “Go!”
-     Wait for 1 second
+Print “Go!”
+Wait for 1 second
 
 Create a random number generator 
 Repeat 10 times to display 10 different words
