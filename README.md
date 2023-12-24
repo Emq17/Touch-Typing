@@ -1,10 +1,15 @@
-# Touch-Typing
+<p align="center">
+<img src="https://i.imgur.com/076a7RX.pngg" alt="Logo"/>
+</p>
 
-Typing tests are instrumental for people in many different ways. It provides advantages in not just work related things but also day to day activities like doing homework or texting friends. The problem to solve here is to help the user get better, faster and more proficient in touch typing. I will create a simple, small program that will give you random words to type and will convert your time to how many words per minute you are able to achieve. When executed, the program will first ask if you are ready with a count down timer. Second, the random words will appear on the screen for the user to type. I have inputted in a couple of random words in an array to achieve this. After that, your WPM will be displayed after hitting enter on the last word typed. For fun I have added comments to help motivate the user to get faster in the lines below their score.
+<h1 align="center">Touch Typing</h1>
 
-To help solve slow typing speeds, lack of typing techniques & limited familiarity with the keyboard, I will be inputting a timer that counts in nanoseconds how long it will take for the user to finish the group of words displayed, an array full of random words to feed the user many options & not just do the same words over & over again, then an output that displays your score to help motivate you to want to beat it the next time you play. For this specific program, there are not much scenarios involved to solving our problem besides getting the user to play as much as possible. 
 
-Pseduocode:
+- Typing tests are instrumental for people in many different ways. It provides advantages in not just work related things but also day to day activities like doing homework or texting friends. The problem to solve here is to help the user get better, faster and more proficient in touch typing. I will create a simple, small program that will give you random words to type and will convert your time to how many words per minute you are able to achieve. When executed, the program will first ask if you are ready with a count down timer. Second, the random words will appear on the screen for the user to type. I have inputted in a couple of random words in an array to achieve this. After that, your WPM will be displayed after hitting enter on the last word typed. For fun I have added comments to help motivate the user to get faster in the lines below their score.
+
+- To help solve slow typing speeds, lack of typing techniques & limited familiarity with the keyboard, I will be inputting a timer that counts in nanoseconds how long it will take for the user to finish the group of words displayed, an array full of random words to feed the user many options & not just do the same words over & over again, then an output that displays your score to help motivate you to want to beat it the next time you play. For this specific program, there are not much scenarios involved to solving our problem besides getting the user to play as much as possible. 
+
+<h2>Pseduocode:</h2>
 
 Import necessary libraries
 
@@ -48,7 +53,7 @@ Display message: You can do better than that.
 Display message: Try again :)
 
 
-----------------------------------------------
+<h2></h2>
 
 While writing and testing the program code, I made sure to approach things very carefully and systematically to minimize the chance of errors. 
 I reviewed the code line by line, making sure I understood the functionality, logic and purpose of each part. While doing that I also made sure to go over the syntax. 
