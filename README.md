@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/076a7RX.pngg" alt="Logo"/>
 </p>
 
-<h1 align="center">Touch Typing</h1>
+<h1 align="center">Touch Typing Challenge</h1>
 
 
 - Typing tests are instrumental for people in many different ways. It provides advantages in not just work related things but also day to day activities like doing homework or texting friends. The problem to solve here is to help the user get better, faster and more proficient in touch typing. I will create a simple, small program that will give you random words to type and will convert your time to how many words per minute you are able to achieve. When executed, the program will first ask if you are ready with a count down timer. Second, the random words will appear on the screen for the user to type. I have inputted in a couple of random words in an array to achieve this. After that, your WPM will be displayed after hitting enter on the last word typed. For fun I have added comments to help motivate the user to get faster in the lines below their score.
